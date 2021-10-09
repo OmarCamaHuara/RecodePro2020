@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Perfil Principal</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='main.js'></script>
+
+  
+</head>
+<body>
+    <div class="container">
+        <div class="card d-flex justify-content-center" style="width: 25rem;">
+            <img class="card-img-top rounded-circle" src=<%= dado. avatar_url%> alt="Card image cap">
+            <div class="card-body">
+                <h1 class="card-title text-center"><%= dado.name %></h1>
+                <img class="card-img-top" src="https://github-readme-stats.vercel.app/api?username=<%= dado.login %>&show_icons=true&theme=onedark" alt="">
+                <br>
+                <img class="card-img-top" src="https://github-readme-stats.vercel.app/api/top-langs/?username=<%= dado.login %>&layout=compact&theme=onedark" alt="">
+                <h2 class="card-text text-center"><%= dado.bio %></h2>
+                <a href="/" class="btn btn-primary">Procurar outro GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+  
+</body>
+</html>

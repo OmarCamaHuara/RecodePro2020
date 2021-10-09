@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #007bef;
+}
+body {
+    font-family: "Archivo", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", sans-serif;
+}

@@ -1,0 +1,71 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <title>Produto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {border-radius: 8px;}
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Cadastro de Produto</h2>
+        <p>Preencher o formulário para o cadastro do produto</p>
+  
+        <form action="formrespproduto.php" method="post" role="form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" class="form-control" id="nome">
+            <br>
+            </div>
+            
+            <label>Característica:</label>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="organico" name="carac" value="Orgânico">
+                <label class="custom-control-label" for="organico">Orgânico</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="vegetal" name="carac" value="Vegetal">
+                <label class="custom-control-label" for="vegetal">Vegetal</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="trangenico" name="carac" value="Trangênico">
+                <label class="custom-control-label" for="trangenico">Trangênico</label>
+            </div>
+            <br>
+    
+            <select name="qtd" class="custom-select">
+                <option selected>Quantidade</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <br>
+    
+            <div class="form-group">
+                <label for="peso">Peso:</label>
+                <input type="text" name="peso" class="form-control" id="peso">
+            </div>
+            <br>
+    
+            <button type="submit" class="button button1">Enviar Produto</button>
+        </form>
+    </div>
+</body>
+</html>

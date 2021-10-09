@@ -1,0 +1,43 @@
+let valor = 89;
+let nota = 0;
+while(valor > 100){
+  valor = valor - 100;
+  nota++;
+}
+console.log(nota + " nota(s) de R$ 100.00");
+nota = 0;
+while(valor > 50){
+  valor = valor -50;
+  nota++;
+}
+console.log(nota + " nota(s) de R$ 50.00");
+nota = 0;
+while(valor > 20){
+  valor = valor -20;
+  nota++;
+}
+console.log(nota + " nota(s) de R$ 20.00")
+nota = 0;
+while(valor > 10){
+  valor = valor -10;
+  nota++;
+}
+console.log(nota + " nota(s) de R$ 10.00");
+nota = 0;
+while(valor > 5){
+  valor = valor -5;
+  nota++;
+}
+console.log(nota + " nota(s) de R$ 5.00");
+nota = 0;
+while(valor > 2){
+  valor = valor -2;
+  nota++;
+}
+console.log(nota + " nota(s) de R$ 2.00");
+nota = 0;
+while(valor => 1){
+  valor = valor -1;
+  nota++;
+}
+console.log(nota + " nota(s) de R$ 1.00");

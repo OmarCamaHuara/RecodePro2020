@@ -1,0 +1,77 @@
+<?php
+/*      class Pessoa {
+        public $nome;
+        public $idade;
+
+        public function getNome(){
+            return $this->nome;
+        }
+        public function getIdade(){
+            return $this->idade;
+        }
+    }
+
+    $pessoa = new Pessoa;
+    $pessoa->nome = "Omar";
+
+    $pessoa2 = new Pessoa;
+    $pessoa2->nome = "Yhermaya";
+
+    echo $pessoa->nome;
+    echo "<br/>";
+    echo $pessoa2->nome;  */
+
+    // Guia de estilos de Codigo PSR, PHP-FIg
+
+    // PSR-1  basc coding standard 
+
+    //class User 
+    //{
+        // Constantes devem ser declaradas em maisculo
+
+        //const NOME = "Omar";
+        //const NOME_USUARIO = "Yhermaya";
+
+        // Os atributos de uma classe podem utilizar o 
+        // padrao underscore, cameCase
+
+        //public $nome_usuario;
+
+        //public $NomeUsuario;
+
+        //public $nomeUsuario;
+
+        //public function getNome()
+        //{
+        //}
+    //}
+            //PSR-2 Codign style guide
+
+            // PSR-4 Autoload de archivos 
+    class User
+    {
+        public $nomeUsuario;
+
+        public function getNome()
+        {
+            //if ($condicion) {
+
+            //} elseif ($condicion){
+
+            //} else {
+
+            //}
+
+        }
+    }
+
+?>
+namespace Source;
+
+class User
+{
+
+}
+
+tag de impresion
+<?= "Omar" ?>

@@ -1,0 +1,87 @@
+<!--<form>
+    <input type="checkbox" id="veiculo1" name="veiculo1" value="bicicleta">             Eu tenho uma bicicleta
+    <br>
+    <input type="checkbox" id="veiculo2" name="veiculo2" value="carro"> Eu tenho um carro
+    <br>
+    <input type="checkbox" id="veiculo3" name="veiculo3" value="barco"> Eu tenho um barco
+</form>
+
+Criar um código HTML com o nome formulario3.html
+Colocar o título na página Formulario 3;
+Na tag <body> colocar em negrito na cor vermelha um título para as demandas abaixo;
+Na tag <body> colocar um parágrafo com informação para preenchimento do formulário;
+Na tag <body> colocar um título em negrito com o nome Formulário de Escolha;
+Na tag <body> colocar uma tabela com informações dos veículos(Tipo e Valor). A tabela deve ter as linhas com as informações do carro, da moto, do barco e da bicicleta. A tabela precisa ter um título;
+Na tag <form> colocar as entradas de dados abaixo (um em cada linha):
+Campo nome;
+Campo idade;
+Campo Data de Nascimento;
+Campo Interesse:
+Carro;		Colocar como default.
+Moto;
+Barco
+Bicicleta.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+</head>
+<body>
+    <h1 color:#FF0000><b>Demandas</b></h1>
+    <p>Estamos colocando las siguientes demandas para las personas que vana adquirir un carro nuevo o usado</p>
+    <h3><b>Formulario de escolha</b></h3>
+    <table border="1">
+        <tr>
+            <td>&nbsp;</td>
+            <th>Tipo</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <th>CARRO</th>
+            <td>Toyota</td>
+            <td>520.000.00</td>
+        </tr>
+        <tr>
+            <th>MOTO</th>
+            <td>Moyo</td>
+            <td>30.000.00</td>
+        </tr>
+        <tr>
+            <th>BARCO</th>
+            <td>Moyo</td>
+            <td>30.000.00</td>
+        </tr>
+        <tr>
+            <th>BICICLETA</th>
+            <td>Moyo</td>
+            <td>30.000.00</td>
+        </tr> 
+    </table>
+    <form>
+        <caption><b>Formulario</b></caption><br>
+        <label for="pnome">Nome</label><br>
+        <input type="text" id="pnome" name="pnome"><br><br>
+
+        <label for="idade">Idade</label><br>
+        <input type="number" id="idade" name="idade"><br><br>
+
+        <label for="dataNac">Data de Nacimento</label><br>
+        <input type="date" id="dataNac" name="dataNac"><br><br>
+
+        <p>Campo de Interes</p><br>
+        <input type="radio" name="ci" value="carro">Carro
+        <input type="radio" name="ci" value="barco">Barco
+        <input type="radio" name="ci" value="moto">Moto
+        <input type="radio" name="ci" value="bicicleta" checked>Bicicleta
+    </form>
+
+    <!--Pasar informaciones de un ligar para otro-->
+    <form action="http://www.foo.com" method="GET">
+        <label for="dizer">O que voce quer falar?</label>
+        <input name="text">
+    </form>
+</body>
+</html>

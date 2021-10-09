@@ -1,0 +1,45 @@
+<?php
+    $nome = $_POST['nome'];
+    $caracteristica = $_POST['carac'];
+    $quantidade = $_POST['qtd'];
+    $peso = $_POST['peso'];
+      
+    $link = mysqli_connect("localhost", "root", "", "recodepro");
+ 
+    if (!$link)
+    {
+        die ("Falha na conexão com o BD " . mysqli_connect_errno());
+        exit();
+    }
+
+    echo "Informações que serão inseridas na tabela aluno";
+    echo "<br>";
+    echo $nome;
+    echo "<br>";
+    echo $caracteristica;
+    echo "<br>";
+    echo $quantidade;
+    echo "<br>";
+    echo $peso;
+    echo "<br>";
+
+    $insere = "insert into produto (nome, caracteristica, quantidade, peso)
+    values ('$nome', '$caracteristica', '$quantidade', '$peso')";
+  
+    mysqli_query ($link, $insere);
+    echo "<br>";
+    echo "Produto incluido com sucesso";
+
+    mysqli_close($link);
+?>
+
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <p><font face="Arial, Helvetica, sans-serif" size="4">
+            <a href="formularioproduto.html">Clique aqui para voltar ao formulrio</a>
+        </font>
+    </body>
+</html>

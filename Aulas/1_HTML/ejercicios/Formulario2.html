@@ -1,0 +1,82 @@
+
+<!--Criar um código HTML com o nome formulario1.html
+Na tag <header> colocar o título na página Formulario 1;
+Na tag <header> colocar as informações já vistas da tag <meta>;
+Na tag <body> colocar um título em negrito com o nome Formulário de Inscrição;
+Na tag <form> colocar as entradas de dados abaixo:
+Campo nome;
+Campo sobrenome;
+Campo idade;
+Campo e-mail;
+Campo mensagem.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <caption><b>Formulario de Inscrição</b></caption>
+    <form action="">
+    <!--Nome-->
+    <label for="pname">Primer nome:</label><br>
+    <input type="text" id="pname" name="pname"><br>
+    <!--Sobrenome-->
+    <label for="sname">Sobrenome:</label><br>
+    <input type="text" id=spname" name="sname"><br>
+    <!--Idade-->
+    <label for="num">Idade:</label><br>
+    <input type="number" id="num" name="num"><br>
+    <!--E-mail-->
+    <label for="mail">E-mail:</label><br>
+    <input type="text" id="mail" name="mail"><br>
+    <!--Mensagem-->
+    <label for="msg">Mensagem:</label><br>
+    <input type="text" id="msg" name="msg"><br>
+    </form>
+
+    <form>
+            <p> Qual a resposta para a pergunta? </p>
+            <input type="radio" name = "ans" value="sim"> 
+            <br>
+            <input type="radio" name = "ans" value="nao">
+            <br>
+            <input type="radio" name = "ans" value="talvez" checked> 
+            <br> 
+            <br>
+    </form>
+
+    <!--Colocar o título na página Formulario 2;
+    Na tag <body> colocar um título em negrito com a fonte na cor verde com o nome Informações Gerais;
+    Na tag <body> inserir uma foto que faça referência ao negócio;
+    Na tag <body> colocar um dois parágrafos com informação sobre a temática que irá tratar;
+    Na tag <body> colocar um outro título em negrito com a fonte na cor azul com o nome Formulário de Escolha;
+    Na tag <form> colocar as entradas de dados abaixo:
+    Campo nome;
+    Campo idade;
+    Campo sexo:
+    Masculino;
+    Feminino;
+    Outros. 	
+    Colocar como default.
+    -->
+    <h2><b>
+        Doeki
+    </b></h2>
+    <img src="Logo1.png" alt="Logo" width="200px">
+    <p>Estamos asiendo un puente entre una persona que tiene un buen corazon con otra que necesita mas oportunidades de dessarrollarse</p>
+    <p>Con la colaboracion de nuestras ONGs llegaremos a mas gente y lograr nuestro objetivo de un mundo mejor</p>
+    <caption color="Blue"><b>Formulario de Escolha/b></caption>
+    <form action="">
+        <label for="pnome">Nome:</label>
+        <input type="text" id="pnome" name="pnome">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" nome="idade">
+        <p>Sexo</p>
+        <input type="radio" name="ans" value="Masculino"> Masculino
+        <input type="radio" name="ans" value="Feminino"> Feminino
+        <input type="radio" name="ans" value="Outros"> Outros
+    </form>
+
+</body>
+</html>

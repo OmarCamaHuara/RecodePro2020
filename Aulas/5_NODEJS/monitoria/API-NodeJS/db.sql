@@ -1,0 +1,10 @@
+CREATE DATABASE RECODEPRO;
+
+CREATE TABLE usuarios (
+    id INT  NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(80)
+);
+
+INSERT INTO usuarios (name) VALUES ('Omar'), ('Yhermaya')
+
+SELECT * FROM usuarios

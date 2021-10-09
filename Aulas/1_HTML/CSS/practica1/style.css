@@ -1,0 +1,40 @@
+form, input {
+    border: 1px solid green;
+    width: 50%;
+}
+ol{
+    border: 1px solid blueviolet;
+}
+
+#item2{
+    --display: none;
+}
+#item3{
+    --visibility: hidden;
+}
+li {
+    --display: inline;
+    float: right;
+    width: 150px;
+}
+
+.container{
+    border: 1px solid royalblue;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+}
+.box{
+    border: 1px solid sienna ;
+    --display: inline;
+    --float: right;
+    width: 40px;
+    overflow: scroll;
+}
+.primeiro{
+    --position: relative; /*relative, absolut, fixo*/
+    --top: 60px;
+    --left: 80px;
+    --float: right;
+
+}

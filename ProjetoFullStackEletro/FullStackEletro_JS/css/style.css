@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#formasPagamento {
+    color: red;
+}
+h1, h2{
+    font-weight: bolder;
+}
+
+p{
+    font-weight: lighter;
+}
+
+.menu{
+    display: flex;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 0 0;
+    width: 20%;
+}
+.menu img {
+    width: 90px;
+    height: 90px;
+}
+.categorias{
+    margin: 0;
+    height: 50%;
+    width: 20%;
+    float: left;
+}
+.produtos{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+}
+.box_produto{
+    display: inline-block;
+    width: 25%;
+    flex: 0 1 25%;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.filiais {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.filiais-box{
+    width: 33%;
+}
+.contacto{
+    margin-top: 90px;
+    width: 50%;
+}
+.contacto img{
+    width: 48px;
+}
+.formulario{
+    width: 500px;
+    padding: 16px;
+    margin: auto;
+    
+}
+.box-formulario textarea, input{
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 8px 0;
+    resize: none;
+    display: block;
+}
+
+.box-formulario input[type="submit"] {
+    padding: 8px 16px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+box.formulario input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+#rodape{
+    text-align: center;
+}
+.preco{
+    color: red;
+    font-weight: bolder;
+}

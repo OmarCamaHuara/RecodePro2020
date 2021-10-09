@@ -1,0 +1,13 @@
+[
+    {
+        "nome" : "Omar",
+        "idade" : 29,
+        "cargo" : "Montitor",
+        "gostaDeProgramar" : true,
+        "cor" : null,
+        "tecnologias" : ["PHP", "React", "MySQL"]
+    },
+    {
+        "nome": "Yhermaya"
+    }
+]

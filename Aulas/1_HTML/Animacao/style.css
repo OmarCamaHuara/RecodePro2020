@@ -1,0 +1,83 @@
+.caixa {
+    height: 150px;
+    width: 150px;
+    background: red;
+    opacity: 100%;
+    animation: mudarCor 2s;
+    animation: sumir 10s;
+}
+h2{
+    font-size: 64px;
+    animation: texto 5s forwards;
+}
+
+@keyframes texto {
+    0%{
+        letter-spacing: 0;
+    }
+    50%{
+        letter-spacing: 40px;
+    }
+    100%{
+        letter-spacing: 0;
+    }
+}
+
+@keyframes mudarCor{
+    0% {
+        background: red;
+    }
+
+    100% {
+        background: blue;
+    }
+}
+@keyframes sumir {
+    0% {
+        opacity:100%;
+    }
+    80% {
+        opacity: 80%;
+    }
+    90%{
+        opacity:90%;
+    }
+    100% {
+        oopacity:0;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #20B2AA;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #BDBDBD;
+}
+
+.caixa2{
+    height: 150px;
+    width: 150px;
+    background: red;
+
+    animation: aparece 10s forwards;
+    opacity: 0;
+}
+@keyframes aparece{
+    0%{
+        opacity: 0;
+        margin-left: -50%;
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 0;
+    }
+}
+.caixa2:hover {
+    animation: aparece 2s forwards;
+}

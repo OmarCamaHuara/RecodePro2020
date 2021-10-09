@@ -1,0 +1,27 @@
+<ul class="nav nav-fill shadow d-flex align-items-center font-weight-bold">
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="index.php"><img class="logo" src="img/logo.png" alt="FullStackEletro"></a>
+    </li>
+    <li class="nav-item">
+      <div class="btn-group">
+        <button type="button" class="btn btn-info font-"><a class="text-white text-decoration-none" href="produtos.php">Produtos</a></button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" onclick="exibirTodo()">Todos</a>
+          <a class="dropdown-item" onclick="exibirCategoria('geladeira')">Geladeiras</a>
+          <a class="dropdown-item" onclick="exibirCategoria('fogao')">Fogões</a>
+          <a class="dropdown-item" onclick="exibirCategoria('microondas')">Microondas</a>
+          <a class="dropdown-item" onclick="exibirCategoria('lavaRoupa')">Lavadouras de Ropas</a>
+          <a class="dropdown-item" onclick="exibirCategoria('lavaLouca')">Lava_Louças</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="loja.php">Nossas Lojas</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="contato.php">Contato</a>
+      </li>
+  </ul>

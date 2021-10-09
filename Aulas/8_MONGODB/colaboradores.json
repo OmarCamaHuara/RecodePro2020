@@ -1,0 +1,51 @@
+[
+  {
+  "_id": {
+    "$oid": "6016cf66937399e892a815d0"
+  },
+  "nome": "Fabricio",
+  "sobrenome": "Almeira",
+  "idade": 20,
+  "endereco": "Rua Palmaris",
+  "nro": 101,
+  "complemento": "casa 1",
+  "ciudade": "Sao Paulo",
+  "estado": "SP"
+},{
+  "_id": {
+    "$oid": "6016d0d3a5e2f327f4b88cea"
+  },
+  "nome": "Omar",
+  "sobrenome": "Cama",
+  "idade": 30,
+  "endereco": "Rua Sao Feliciano",
+  "nro": 319,
+  "complemento": "casa",
+  "ciudade": "Sao Paulo",
+  "estado": "SP"
+},{
+  "_id": {
+    "$oid": "6016d0f8a5e2f327f4b88ceb"
+  },
+  "nome": "Oscar",
+  "sobrenome": "Huarahuara",
+  "idade": 25,
+  "endereco": "Rua Sao Guanavara",
+  "nro": 25,
+  "complemento": "casa",
+  "ciudade": "Sao Paulo",
+  "estado": "SP"
+},{
+  "_id": {
+    "$oid": "6016d29ea5e2f327f4b88cee"
+  },
+  "nome": "Mario",
+  "sobrenome": "Sanches",
+  "idade": 26,
+  "endereco": "Rua Sao gol",
+  "nro": 35,
+  "complemento": "departamento",
+  "ciudade": "Rio Janeiro",
+  "estado": "RJ"
+}
+]

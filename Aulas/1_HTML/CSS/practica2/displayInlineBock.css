@@ -1,0 +1,17 @@
+.example {
+    color: #000;
+}
+.exampleItem {
+    width: 50%;
+    height: 150px;
+    display: inline;
+}
+.exampleItemFirst {
+    background-color: #AFF116;
+}
+.exampleItemSecond {
+    background-color: #57c7c3;
+}
+.exampleItemThird{
+    background-color: #3b97d3;
+}

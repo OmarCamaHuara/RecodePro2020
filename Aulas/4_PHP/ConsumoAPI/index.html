@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API</title>
+</head>
+<body>
+
+    <h1>Primer ejercicio</h1>
+    <button onclick="getApie()">
+        Buscar Estados
+    </button>
+    <ul id="lista-estados">
+    </ul>
+
+
+
+
+    <h1>Secundo ejercicio</h1>
+
+    <button onclick="getApi()">
+        Buscar Usuarios
+    </button>
+    
+    <div id="users">
+
+    </div>
+
+
+    <script>
+        function getStates()
+        {
+            const url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados"; 
+            
+            fetch(url)
+                .then(response => response.json()
+                .then(dados => {
+                    let ul = document.getElementById("lista-estados");
+                        //for(let i = 0; i < dados.length; i++){
+                        //    ul.innerHTML += `<li>${dados[i].nome}</li>`   
+                        //}
+                    
+                        for(dado of dados){
+                            ul.innerHTML += `<li>${dado.nome}</li>`
+                        }
+
+                        //dados.map((dado) => {
+                        //    ul.innerHTML += `<li>${dado.nome}</li>`
+                        //})
+                }))
+
+                //  mas usado 
+
+                
+        }
+        async function getApie()
+        {
+            const url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados";
+            
+            const response = await fetch(url);
+            const dados = await response.json();
+            
+            let ul = document.getElementById('lista-estados');
+            dados.map(element => ul.innerHTML += `<li>${element.nome}</li>`)
+        }
+
+
+        async function getApi()
+        {
+            const url = "https://api.github.com/users";
+            
+            const response = await fetch(url);
+            const dados = await response.json();
+            
+           let div = document.getElementById("users")
+
+           dados.map((dado) => {
+                div.innerHTML += `<img src="${dado.avatar_url}" width="200" />`
+          })
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Fetch = Buscar = promesa
+
+            // vai buscar o cafe - Busque os dados
+            // fetch(url)
+
+                // o graçon troue o cafe - Me traiga os dados
+                //.then(function(response){ return response.json()})
+
+                // Benbendo o cafe - Consumo de dados
+                //.then(function(dados){
+                    //console.log(dados)
+            //})
+
+           
+    </script>
+    
+    
+</body>
+</html>

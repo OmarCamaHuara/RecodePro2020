@@ -1,0 +1,9 @@
+icaro.
+Alem disso, o React e Fortemente basado em componentes que podem ser incorporados ao codigo.
+Por ser uma biblioteca JavaScript, o React.js pode ser usado de duas formas: com instalacao na tag script ou como projeto local.
+Ele foi construido assim para que possamos utiliza-lo da forma que for prociso, seja como uma interacao simples e pequene em nosso site(sem alterar toda sua estrutura) ou como um projeto completo e complexo, feito apenas com React.js.
+
+Vamos ver em detalhes cada uma dessas funcionalidades.
+
+Instalacao como script
+A inclusao da biblioteca React.js no projeto web acontece da mesma forma como no Bootstrap adicionando as tags de inclusao de scripts de CDN ()

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .conteudo img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h3>Insira seu Usuário do GitHub</h3>           
+            </div>
+    
+            <div class="card-body">
+                <form action="/envia-github" method="POST">
+                    <div class="form-group">
+                              <label for="GitHub">GitHub</label>
+                              <input class="form-control" type="text" name="GitHub" id="GitHub">
+                              <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
